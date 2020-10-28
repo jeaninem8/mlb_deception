@@ -93,7 +93,7 @@ for (i in 1:length(id_list)) {
     else {player_data$bauer_unit[b] <- NA}
   }
   
-  # for a small number of players, they did not throw one of the pitch types above, but did throw a slider - used to calculate in these instances
+  # for a small number of players, they did not throw one of the pitch types above, but did throw a sinker - used to calculate in these instances
   if (sum(!is.na(player_data$bauer_unit)) == 0) {
     for (b in 1:nrow(player_data)) {
       if (player_data$pitch_type[b] == "SI") {
